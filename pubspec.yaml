@@ -1,0 +1,98 @@
+name: music_app2
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  geolocator: ^13.0.2  # 重複を解消
+  audioplayers: ^6.1.0
+  http: ^1.2.2
+  intl: ^0.20.1  # 互換性のあるバージョンに変更
+  firebase_core: ^3.8.0
+  cloud_firestore: ^5.5.0
+  firebase_auth: ^5.3.3
+  flutter_dotenv: ^5.2.1
+  google_maps_flutter: ^2.2.0
+  cupertino_icons: ^1.0.0 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0  # 最新バージョンに更新
+  mockito: ^5.3.0
+  build_runner: ^2.3.3
+  test: 1.25.8
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/music/lively_music.mp3
+    - assets/music/morning_music.mp3
+    - assets/music/night_music.mp3
+    - assets/music/quiet_music.mp3
+    - assets/music/rainy_music.mp3
+    - assets/music/residential_music.mp3
+    - assets/music/shop_music.mp3
+    - assets/music/station_music.mp3
+    - assets/music/0_music.mp3
+    - assets/music/1_music.mp3
+    - assets/music/2_music.mp3
+    - assets/music/3_music.mp3
+    - assets/music/4_music.mp3
+    - assets/music/5_music.mp3
+    - assets/music/6_music.mp3
+    - assets/music/7_music.mp3
+    - assets/music/8_music.mp3
+    - assets/music/9_music.mp3
+    - assets/music/10_music.mp3
+    - assets/music/11_music.mp3
+    - assets/music/12_music.mp3
+    - assets/music/13_music.mp3
+    - assets/music/14_music.mp3
+    - assets/music/15_music.mp3
+    - assets/music/16_music.mp3
+    - assets/music/17_music.mp3
+    - assets/music/18_music.mp3
+    - assets/music/19_music.mp3
+    - assets/music/20_music.mp3
+    - assets/music/21_music.mp3
+    - assets/music/22_music.mp3
+    - assets/music/23_music.mp3
+    - assets/images/lively_image.png
+    - assets/images/morning_image.png
+    - assets/images/night_image.png
+    - assets/images/quiet_image.png
+    - assets/images/rainy_image.png
+    - assets/images/residential_image.png
+    - assets/images/shop_image.png
+    - assets/images/station_image.png
+    - assets/images/0_image.png
+    - assets/images/1_image.png
+    - assets/images/2_image.png
+    - assets/images/3_image.png
+    - assets/images/4_image.png
+    - assets/images/5_image.png
+    - assets/images/6_image.png
+    - assets/images/7_image.png
+    - assets/images/8_image.png
+    - assets/images/9_image.png
+    - assets/images/10_image.png
+    - assets/images/11_image.png
+    - assets/images/12_image.png
+    - assets/images/13_image.png
+    - assets/images/14_image.png
+    - assets/images/15_image.png
+    - assets/images/16_image.png
+    - assets/images/17_image.png
+    - assets/images/18_image.png
+    - assets/images/19_image.png
+    - assets/images/20_image.png
+    - assets/images/21_image.png
+    - assets/images/22_image.png
+    - assets/images/23_image.png
+    - assets/.env

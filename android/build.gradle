@@ -1,0 +1,48 @@
+// buildscript セクションを最初に配置
+buildscript {
+    ext.kotlin_version = '1.9.0' // Kotlin のバージョン
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.android.tools.build:gradle:7.2.2' // 最新バージョンに変更可
+    }
+}
+
+// プラグイン設定（必要に応じて `app/build.gradle` にも設定）
+plugins {
+    id 'com.android.application' // Android プロジェクトに必須
+}
+
+// プロジェクト全体のリポジトリ設定
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+// ビルドディレクトリ設定
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+android {
+    compileSdkVersion 33  // 必要に応じて適切なバージョン番号を指定してください
+
+    defaultConfig {
+        applicationId "com.example.music_app"  // アプリのパッケージ名
+        minSdkVersion 21                       // 必要に応じて変更
+        targetSdkVersion 33                    // `compileSdkVersion` と同じバージョンを設定
+        versionCode 1
+        versionName "1.0"
+    }
+
+    // その他の設定
+}

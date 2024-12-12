@@ -1,0 +1,30 @@
+{
+    "name": "music_app",
+    "version": "1.0.0",
+    "description": "A music application with location and weather functionalities.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "axios": "^1.7.9",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "firebase-admin": "^11.11.1",
+        "firebase-functions": "^6.1.2"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.15.0",
+        "@typescript-eslint/eslint-plugin": "^8.16.0",
+        "@typescript-eslint/parser": "^8.16.0",
+        "eslint": "^9.16.0"
+    },
+    "directories": {
+        "lib": "lib",
+        "test": "test"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
